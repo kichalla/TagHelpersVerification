@@ -1,6 +1,11 @@
-﻿@{
+﻿@model Person
+@{
     ViewData["Title"] = "Home Page";
 }
+
+<greeting text="Hello, John"/>
+
+<textarea asp-for="@Model.Blurb"></textarea>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">

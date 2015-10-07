@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
+using TagHelpersVerification.Models;
 
 namespace TagHelpersVerification.Controllers
 {
@@ -10,7 +11,7 @@ namespace TagHelpersVerification.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View(model: new Person());
         }
 
         public IActionResult About()
